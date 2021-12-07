@@ -1,6 +1,7 @@
 {
   "env": {
     "browser": true,
+    "node": true,
     "es2021": true
   },
   "extends": "eslint:recommended",
@@ -15,6 +16,10 @@
       {
         "endOfLine": "auto"
       }
+    ],
+    "quotes": [
+      "single",
+      { "avoidEscape": true, "allowTemplateLiterals": true }
     ],
     "linebreak-style": 0
   }
