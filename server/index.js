@@ -1,10 +1,12 @@
 import express from "express";
-import mysql from "mysql";
+import cors from "cors";
 
 import { PORT } from "./utils/config.js";
 console.log(PORT);
 
 const app = express();
+
+app.use(cors);
 
 app.get("/", (req, res) => {
   res.send("HELLO");

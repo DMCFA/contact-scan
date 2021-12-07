@@ -14,8 +14,10 @@
   "author": "Duarte Almeida",
   "license": "MIT",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "mongoose": "^6.0.15",
     "mysql": "^2.18.1"
   },
   "devDependencies": {
