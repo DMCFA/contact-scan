@@ -1,0 +1,21 @@
+:root {
+  --font-size: 1em;
+  --btn-font: 'Roboto', sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.spinner-border {
+  width: 8em;
+  height: 8em;
+}
