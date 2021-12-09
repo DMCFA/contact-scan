@@ -1,0 +1,35 @@
+$font-size: 1em;
+$font-stack: 'Roboto', sans-serif;
+$btn-font: 'Roboto', 'sans-serif';
+$background-color: #f7fbfc;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: $font-stack;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $background-color !important;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.loading-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.spinner-border {
+  width: 8em;
+  height: 8em;
+}
