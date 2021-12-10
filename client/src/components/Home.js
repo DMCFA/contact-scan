@@ -5,13 +5,15 @@ const Home = ({ contacts }) => {
   const allContacts = contacts;
 
   const contactName = allContacts.map((contact) => (
-    <li key={contact.id}>{contact.name}</li>
+    <li className='contacts-line' key={contact.id}>
+      {contact.name}
+    </li>
   ));
 
   return (
     <div className='home-container'>
       <NavBar />
-      <ul>{contactName}</ul>
+      <ul className='contacts-container'>{contactName}</ul>
     </div>
   );
 };
