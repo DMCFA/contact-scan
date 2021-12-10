@@ -2,6 +2,7 @@ $font-size: 1em;
 $font-stack: 'Roboto', sans-serif;
 $btn-font: 'Roboto', 'sans-serif';
 $background-color: #f7fbfc;
+$border-color: #769fcd;
 
 html {
   scroll-behavior: smooth;
@@ -19,7 +20,12 @@ body {
 
 .container {
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
+
+//Loading component
 
 .loading-screen {
   min-height: 100vh;
@@ -32,4 +38,44 @@ body {
 .spinner-border {
   width: 8em;
   height: 8em;
+}
+
+//Home component
+
+.home-container {
+  max-height: fit-content;
+  margin: 5%;
+  padding: 4% 2%;
+  border: 4px solid $border-color;
+  border-radius: 5px;
+
+  .contacts-container {
+    list-style-type: none;
+  }
+}
+
+//Nav component
+
+.nav-container {
+  padding: 0.5rem;
+
+  .nav-item {
+    padding-inline: 0.125rem;
+
+    img {
+      margin-right: 1.6rem;
+      width: 50px;
+      height: 50px;
+    }
+
+    button {
+      font-weight: 500;
+    }
+
+    .container-fluid {
+      padding-inline-start: 1rem;
+      padding-top: 0.3rem;
+      margin-left: 0.5rem;
+    }
+  }
 }
