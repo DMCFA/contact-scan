@@ -1,4 +1,6 @@
 $font-size: 1em;
+$font-variant: small-caps;
+$font-spacing: 0.05em;
 $font-stack: 'Roboto', sans-serif;
 $btn-font: 'Roboto', 'sans-serif';
 $background-color: #f7fbfc;
@@ -51,6 +53,24 @@ body {
 
   .contacts-container {
     list-style-type: none;
+    padding-inline: 1rem;
+  }
+
+  .contacts-line {
+    margin-block: 1rem;
+    padding-block: 1rem;
+    border: 2px solid $border-color;
+    border-radius: 2%;
+    font-weight: 500;
+    font-variant: $font-variant;
+    letter-spacing: $font-spacing;
+  }
+
+  a {
+    display: block;
+    padding-inline-start: 0.8rem;
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -70,6 +90,12 @@ body {
 
     button {
       font-weight: 500;
+      font-variant: $font-variant;
+      letter-spacing: $font-spacing;
+    }
+
+    .search-btn {
+      margin-inline-start: 1rem;
     }
 
     .container-fluid {
