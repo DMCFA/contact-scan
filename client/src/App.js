@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { Routes, Route, Link } from 'react-router-dom';
 import { getAllContacts } from './routes/api';
 import Home from './components/Home';
 import Loading from './components/Loading';
@@ -19,22 +19,18 @@ function App() {
   }, []);
 
   return (
-    <Router>
+    <div className='container'>
       <Routes>
         <Route
-          exact
           path='/'
           element={
-            <div className='container'>
-              <div>
-                {isLoading ? <Loading /> : <Home contacts={contacts} />}
-              </div>
-            </div>
+            <div>{isLoading ? <Loading /> : <Home contacts={contacts} />}</div>
           }
         ></Route>
-        <Route path='/new' component={ContactForm}></Route>
+        <Route path='/new' element={<ContactForm />}></Route>
+        <Route path='/:id' element={<Contact />}></Route>
       </Routes>
-    </Router>
+    </div>
   );
 }
 
