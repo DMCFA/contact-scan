@@ -1,18 +1,23 @@
-import React from 'react';
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from 'react';
 import NavBar from './NavBar';
 
 const Home = ({ contacts }) => {
-  const allContacts = contacts;
+  const [searchWord, setSearchWord] = useState('');
 
-  const contactName = allContacts.map((contact) => (
+  const filteredNames = contacts.filter((person) =>
+    person.name.toLowerCase().includes(searchWord.toLowerCase())
+  );
+
+  const contactName = filteredNames.map((contact) => (
     <li className='contacts-line' key={contact.id}>
-      {contact.name}
+      <a href=''>{contact.name}</a>{' '}
     </li>
   ));
 
   return (
     <div className='home-container'>
-      <NavBar />
+      <NavBar setSearchWord={setSearchWord} />
       <ul className='contacts-container'>{contactName}</ul>
     </div>
   );
