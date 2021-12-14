@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from 'react';
-import NavBar from './NavBar';
+import { NavBar } from './NavBar';
 
 const Home = ({ contacts }) => {
   const [searchWord, setSearchWord] = useState('');
