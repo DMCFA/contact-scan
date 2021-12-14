@@ -42,13 +42,6 @@ const NavBar = ({ setSearchWord }) => {
                 aria-label='Search'
                 onChange={(e) => searchInput(e.target.value)}
               />
-              <Button
-                className='search-btn'
-                variant='outline-success'
-                type='button'
-              >
-                ❌
-              </Button>
             </form>
           </div>
         </Nav.Item>
