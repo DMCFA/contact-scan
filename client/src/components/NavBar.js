@@ -1,10 +1,18 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button';
 import logo from './../img/contact.png';
 
-const NavBar = () => {
+const NavBar = ({ setSearchWord }) => {
+  const navigate = useNavigate();
+  let searchInput = setSearchWord;
+
+  const handleClick = () => {
+    navigate('/new');
+  };
+
   return (
     <div className='nav-container'>
       <Navbar bg='light' expand='lg' container='sm'>
@@ -19,6 +27,7 @@ const NavBar = () => {
             type='button'
             size='sm'
             variant='outline-success'
+            onClick={handleClick}
           >
             Add Contact
           </Button>
@@ -31,13 +40,14 @@ const NavBar = () => {
                 type='search'
                 placeholder='Search'
                 aria-label='Search'
+                onChange={(e) => searchInput(e.target.value)}
               />
               <Button
                 className='search-btn'
                 variant='outline-success'
-                type='submit'
+                type='button'
               >
-                🚀
+                ❌
               </Button>
             </form>
           </div>
