@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { NavBar } from './NavBar';
 
 const Home = ({ contacts }) => {
@@ -11,7 +11,7 @@ const Home = ({ contacts }) => {
 
   const contactName = filteredNames.map((contact) => (
     <li className='contacts-line' key={contact.id}>
-      <a href=''>{contact.name}</a>{' '}
+      <a href={'/' + contact.id}>{contact.name}</a>
     </li>
   ));
 
