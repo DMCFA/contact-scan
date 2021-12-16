@@ -22,7 +22,7 @@
     <a href="https://github.com/DMCFA/contact-scan"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo (Coming soon, on the 19th of December)</a>
+    <a href="">View Demo (Coming very soon)</a>
     ·
     <a href="https://github.com/DMCFA/contact-scan/issues">Report Bug</a>
     ·
@@ -45,7 +45,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <li><a href="#running-project">Running Project</a></li>
+        <li><a href="#installation">Running Project</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -188,7 +188,7 @@ Project Link: [https://github.com/DMCFA/contact-scan](https://github.com/DMCFA/c
 
 ## Acknowledgments
 
-In addition to the amazing technologies and tools listed in the 'Built With' section a big THANK YOU too:
+In addition to the amazing technologies and tools listed in the 'Built With' section a big THANK YOU to:
 
 - [Express.js](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
