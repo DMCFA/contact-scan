@@ -11,7 +11,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/DMCFA/contact-scan">
-    <img src="src/img/readme.PNG" alt="Logo" width="60" height="60">
+    <img src="client\src\img\contact.png" alt="Logo" width="60" height="60">
   </a>
 
   <h3 align="center">Contact Scan</h3>
