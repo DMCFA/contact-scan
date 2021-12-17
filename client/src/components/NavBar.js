@@ -83,3 +83,36 @@ export const FormNav = () => {
     </div>
   );
 };
+
+export const ContactNav = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate('/');
+  };
+  return (
+    <div className='nav-container'>
+      <Navbar bg='light' expand='lg' container='sm'>
+        <Nav.Item>
+          <Nav.Item>
+            <img src={logo} className='nav-img' alt='company logo' />
+          </Nav.Item>
+        </Nav.Item>
+        <Nav.Item>
+          <Button
+            className='home-btn'
+            type='button'
+            variant='outline-success'
+            onClick={handleClick}
+          >
+            Home
+          </Button>
+        </Nav.Item>
+        <Nav.Item>
+          <div className='container-fluid'>
+            <h2 className='nav-title'>Contact Scan</h2>
+          </div>
+        </Nav.Item>
+      </Navbar>
+    </div>
+  );
+};
