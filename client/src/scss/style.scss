@@ -75,6 +75,40 @@ body {
   }
 }
 
+//Contact page
+
+.contact-container {
+  height: fit-content;
+  margin: 2%;
+  padding: 2% 1%;
+  border: 4px solid $border-color;
+  border-radius: 5px;
+
+  .contact-name {
+    padding-block: 1.2em;
+    padding-inline-start: 0.8em;
+    font-size: 1.3em;
+    font-weight: 700;
+    font-variant: $font-variant;
+    letter-spacing: $font-spacing;
+    color: $text-color;
+  }
+
+  .contact-details {
+    padding-block: 1em;
+    font-variant: $font-variant;
+    font-size: 1.2em;
+    letter-spacing: $font-spacing;
+  }
+
+  .email {
+    padding-block: 0.7em !important;
+  }
+  .number {
+    font-size: $font-size;
+  }
+}
+
 //Nav component
 
 .nav-container {
