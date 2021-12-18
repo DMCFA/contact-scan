@@ -6,6 +6,7 @@ import Home from './components/Home';
 import Loading from './components/Loading';
 import Contact from './components/Contact';
 import ContactForm from './components/ContactForm';
+import EditForm from './components/EditForm';
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,6 +30,7 @@ function App() {
         ></Route>
         <Route path='/new' element={<ContactForm />}></Route>
         <Route path='/:id' element={<Contact />}></Route>
+        <Route path='/edit/:id' element={<EditForm />}></Route>
       </Routes>
     </div>
   );
