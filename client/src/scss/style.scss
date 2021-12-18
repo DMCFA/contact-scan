@@ -72,6 +72,24 @@ body {
     padding-inline-start: 0.8rem;
     text-decoration: none;
     color: inherit;
+
+    .icons {
+      float: right;
+      padding-inline-end: 0.5rem;
+    }
+
+    .icon {
+      padding-inline: 0.3rem;
+      font-size: 1.1em;
+    }
+
+    .fa-edit {
+      color: green;
+    }
+
+    .fa-trash-alt {
+      color: orangered;
+    }
   }
 }
 
