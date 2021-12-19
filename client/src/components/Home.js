@@ -7,15 +7,15 @@ const Home = ({ contacts }) => {
   const navigate = useNavigate();
   const [searchWord, setSearchWord] = useState('');
 
-  const handleEdit = (e, id) => {
+  const handleEdit = (e, id, name) => {
     e.preventDefault();
-    navigate(`/edit/${id}`);
+    navigate(`/edit/${id}`, { state: name });
   };
 
-  const handleDelete = (e, id) => {
+  const handleDelete = async (e, id) => {
     e.preventDefault();
-    deleteContact(id);
-    navigate('/');
+    await deleteContact(id);
+    window.location.reload(false);
   };
 
   const filteredNames = contacts.filter((person) =>
@@ -29,7 +29,7 @@ const Home = ({ contacts }) => {
         <span className='icons'>
           <i
             className='icon far fa-edit'
-            onClick={(e) => handleEdit(e, contact.id)}
+            onClick={(e) => handleEdit(e, contact.id, contact.name)}
           ></i>
           <i
             className='icon far fa-trash-alt'
