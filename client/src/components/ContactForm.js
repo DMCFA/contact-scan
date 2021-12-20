@@ -15,6 +15,7 @@ const schema = yup.object().shape({
     .required('A name is required'),
   phone: yup
     .string()
+    .matches(/^\d+$/, 'Only numbers are allowed')
     .min(11, 'Phone number must have 11 digits')
     .max(11, 'Phone number must have 11 digits')
     .required('Phone Number is required'),
@@ -34,7 +35,7 @@ const ContactForm = () => {
       }}
       onSubmit={(values, actions) => {
         try {
-          createContact(JSON.stringify(values, null, 2));
+          createContact(values);
           actions.setSubmitting(false);
           actions.resetForm({
             values: {
