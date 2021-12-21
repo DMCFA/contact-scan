@@ -22,7 +22,7 @@ const schema = yup.object().shape({
   email: yup.string().email('Invalid email').required('Email is required'),
 });
 
-const ContactForm = () => {
+const ContactForm = ({ changes }) => {
   const navigate = useNavigate();
 
   return (
@@ -44,7 +44,8 @@ const ContactForm = () => {
               email: '',
             },
           });
-          navigate('/');
+          changes(true);
+          navigate('/', { state: changes });
         } catch (error) {
           console.log(error);
         }
