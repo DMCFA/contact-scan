@@ -142,9 +142,10 @@ Finally, from the home page you can also search dynamically for a particular con
 
 - [x] Start project
 - [x] Finish building and testing back-end and database (100% done)
-- [ ] Finish building and testing the front-end (80% done)
-- [ ] Mobile-friendly (50% done)
-- [ ] Finish full project
+- [ ] Finish building and testing the front-end (95% done)
+- [x] Mobile-friendly (100% done)
+- [ ] End to end testing
+- [ ] Finish and deploy full project
 
 See the [open issues](https://github.com/DMCFA/contact-scan/issues) for a full list of proposed features (and known issues).
 
