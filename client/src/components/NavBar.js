@@ -25,7 +25,6 @@ export const NavBar = ({ setSearchWord }) => {
           <Button
             className='add-btn'
             type='button'
-            size='sm'
             variant='outline-success'
             onClick={handleClick}
           >
