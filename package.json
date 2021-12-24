@@ -4,7 +4,7 @@
   "description": "<div id=\"top\"></div>",
   "main": "index.js",
   "scripts": {
-    "start": "npm --prefix server start",
+    "start": "node server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
