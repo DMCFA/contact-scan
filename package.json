@@ -1,0 +1,23 @@
+{
+  "name": "contact-scan",
+  "version": "1.0.0",
+  "description": "<div id=\"top\"></div>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DMCFA/contact-scan.git"
+  },
+  "engines": {
+    "node": "16.13.1",
+    "npm": "7.19.1"
+  },
+  "author": "Duarte Almeida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DMCFA/contact-scan/issues"
+  },
+  "homepage": "https://github.com/DMCFA/contact-scan#readme"
+}

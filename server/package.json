@@ -13,10 +13,6 @@
     "logs:prod": "heroku logs --tail",
     "lint": "eslint ."
   },
-  "engines": {
-    "node": "16.13.1",
-    "npm": "7.19.1"
-  },
   "keywords": [],
   "author": "Duarte Almeida",
   "license": "MIT",
