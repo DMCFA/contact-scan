@@ -22,7 +22,7 @@
     <a href="https://github.com/DMCFA/contact-scan"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="">View Demo (Coming very soon)</a>
+    <a href="https://contact-scan.netlify.app/">View Demo</a>
     ·
     <a href="https://github.com/DMCFA/contact-scan/issues">Report Bug</a>
     ·
@@ -68,6 +68,7 @@ This a full stack personal project, aimed at gaining experience with all stages 
 - Building a Restful CRUD API
 - Building and hosting data in database
 - Creating unit testing for front and back-end
+- Deploying front and back end apart from each other
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -141,11 +142,11 @@ Finally, from the home page you can also search dynamically for a particular con
 ## Roadmap
 
 - [x] Start project
-- [x] Finish building and testing back-end and database (100% done)
-- [ ] Finish building and testing the front-end (95% done)
+- [x] Finish building and testing back-end and database
+- [x] Finish building and testing the front-end
 - [x] Mobile-friendly (100% done)
-- [ ] End to end testing
-- [ ] Finish and deploy full project
+- [x] End to end testing
+- [x] Finish and deploy full project
 
 See the [open issues](https://github.com/DMCFA/contact-scan/issues) for a full list of proposed features (and known issues).
 
@@ -191,6 +192,8 @@ Project Link: [https://github.com/DMCFA/contact-scan](https://github.com/DMCFA/c
 
 In addition to the amazing technologies and tools listed in the 'Built With' section a big THANK YOU to:
 
+- [Netlify](https://www.netlify.com/)
+- [Heroku](https://heroku.com/)
 - [Express.js](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [Jest](https://jestjs.io)
