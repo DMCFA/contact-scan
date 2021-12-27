@@ -24,7 +24,7 @@ const Home = ({ contacts }) => {
 
   const contactName = filteredNames.map((contact) => (
     <li className='contacts-line' key={contact.id}>
-      <a href={'/' + contact.id}>
+      <a href={'/id/' + contact.id}>
         {contact.name}
         <span className='icons'>
           <i

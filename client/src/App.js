@@ -32,7 +32,7 @@ function App() {
           path='/new'
           element={<ContactForm changes={setDataChanged} />}
         ></Route>
-        <Route path='/:id' element={<Contact />}></Route>
+        <Route path='/id/:id' element={<Contact />}></Route>
         <Route
           path='/edit/:id'
           element={<EditForm changes={setDataChanged} />}
