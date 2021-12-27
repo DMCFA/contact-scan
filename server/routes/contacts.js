@@ -19,7 +19,14 @@ router.get('/', async (req, res) => {
 // @route    GET "/:contactID"
 // @desc.    Get single contact by contactID
 // @access   Public
-router.get('/:id', findContact, (req, res) => res.json(res.contact));
+router.get('/:id', findContact, async (req, res) => {
+  try {
+    const contact = await Contact.findById(req.params.id);
+    res.json(contact);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
 
 // @route    POST "/"
 // @desc.    Create a contact
