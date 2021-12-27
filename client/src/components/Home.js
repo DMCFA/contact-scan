@@ -7,6 +7,11 @@ const Home = ({ contacts }) => {
   const navigate = useNavigate();
   const [searchWord, setSearchWord] = useState('');
 
+  const handleID = (e, id) => {
+    e.preventDefault();
+    navigate(`/id/${id}`);
+  };
+
   const handleEdit = (e, id, name) => {
     e.preventDefault();
     navigate(`/edit/${id}`, { state: name });
@@ -24,7 +29,7 @@ const Home = ({ contacts }) => {
 
   const contactName = filteredNames.map((contact) => (
     <li className='contacts-line' key={contact.id}>
-      <a href={'/id/' + contact.id}>
+      <a onClick={(e) => handleID(e, contact.id)}>
         {contact.name}
         <span className='icons'>
           <i
