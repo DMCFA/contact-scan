@@ -59,24 +59,24 @@ body {
 
   .contacts-line {
     margin-block: 1rem;
+    padding-inline-start: 0.8rem;
     padding-block: 1rem;
     border: 2px solid $border-color;
     border-radius: 2%;
     font-weight: 500;
     font-variant: $font-variant;
     letter-spacing: $font-spacing;
-  }
 
-  a {
-    display: block;
-    padding-inline-start: 0.8rem;
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
 
     .icons {
       float: right;
       padding-inline-end: 0.5rem;
+      cursor: pointer;
     }
 
     .icon {

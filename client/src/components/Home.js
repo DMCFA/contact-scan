@@ -8,17 +8,14 @@ const Home = ({ contacts }) => {
   const [searchWord, setSearchWord] = useState('');
 
   const handleID = (e, id) => {
-    e.preventDefault();
     navigate(`/id/${id}`);
   };
 
   const handleEdit = (e, id, name) => {
-    e.preventDefault();
     navigate(`/edit/${id}`, { state: name });
   };
 
   const handleDelete = async (e, id) => {
-    e.preventDefault();
     await deleteContact(id);
     window.location.reload(false);
   };
@@ -29,19 +26,19 @@ const Home = ({ contacts }) => {
 
   const contactName = filteredNames.map((contact) => (
     <li className='contacts-line' key={contact.id}>
-      <a onClick={(e) => handleID(e, contact.id)}>
+      <a href='#' onClick={(e) => handleID(e, contact.id)}>
         {contact.name}
-        <span className='icons'>
-          <i
-            className='icon far fa-edit'
-            onClick={(e) => handleEdit(e, contact.id, contact.name)}
-          ></i>
-          <i
-            className='icon far fa-trash-alt'
-            onClick={(e) => handleDelete(e, contact.id)}
-          ></i>
-        </span>
       </a>
+      <span className='icons'>
+        <i
+          className='icon far fa-edit'
+          onClick={(e) => handleEdit(e, contact.id, contact.name)}
+        ></i>
+        <i
+          className='icon far fa-trash-alt'
+          onClick={(e) => handleDelete(e, contact.id)}
+        ></i>
+      </span>
     </li>
   ));
 
