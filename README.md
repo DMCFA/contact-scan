@@ -193,7 +193,7 @@ Project Link: [https://github.com/DMCFA/contact-scan](https://github.com/DMCFA/c
 In addition to the amazing technologies and tools listed in the 'Built With' section a big THANK YOU to:
 
 - [Netlify](https://www.netlify.com/)
-- [Heroku](https://heroku.com/)
+- [Render](https://render.com/)
 - [Express.js](https://expressjs.com/)
 - [Mongoose](https://mongoosejs.com/)
 - [Jest](https://jestjs.io)

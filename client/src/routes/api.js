@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl = 'https://contact-scan.herokuapp.com/api';
+const baseUrl = 'https://contact-scan.onrender.com/api';
 
 // @route    GET "/"
 // @desc.    Get all contacts
